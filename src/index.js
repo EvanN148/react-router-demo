@@ -15,11 +15,11 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <BrowserRouter>
-    <App />
     <Routes >
-      <Route path='/' element={<App />} />
-      <Route path='expenses' element={<Expenses data={data.exp} />} />
-      <Route path='invoices' element={<Invoices data={data.inv} />} />
+      <Route path='/' element={<App />} >
+        <Route path='expenses' element={<Expenses data={data.exp} />} />
+        <Route path='invoices' element={<Invoices data={data.inv} />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 )
