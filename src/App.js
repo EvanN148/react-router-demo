@@ -13,5 +13,3 @@ export default function App() {
     </div>
   );
 }
-
-//testing commit stats
