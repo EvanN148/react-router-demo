@@ -1,4 +1,5 @@
 import { Link, Outlet } from 'react-router-dom'
+//Outlet: this defines the area where the "output" of any nested routes (which we defined in index.js) will be displayed. 
 
 export default function App() {
   return (
