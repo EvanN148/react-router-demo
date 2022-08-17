@@ -31,6 +31,25 @@ let invoices = [
   },
 ];
 
+const posts = [
+  {
+    id: 1,
+    subject: 'test subject 1',
+    message: 'test message 1',
+    image: 'this isnt actually an image'
+  },
+  {
+    id: 2,
+    subject: 'test subject 2',
+    message: 'test message 2',
+    image: 'this isnt actually an image'
+  }
+]
+
+export function getPosts() {
+  return posts;
+}
+
 export function getInvoices() {
   return invoices;
 }
