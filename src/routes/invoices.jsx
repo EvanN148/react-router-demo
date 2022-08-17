@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
 
-import { getInvoices }from '../data'
+import { getPosts }from '../data'
 
-export default function Invoices() {
-  let invoices = getInvoices()
+export default function Posts() {
+  let invoices = getPosts()
   return (
     <h1 >
       Invoices
       {invoices.map(invoice => {
         return (
-          <Link 
-            to={`/invoices/${invoice.number}`}
+          <Link
+            to={`/invoices/${invoice.id}`}
             key={invoice.number}
           >
             {invoice.name}

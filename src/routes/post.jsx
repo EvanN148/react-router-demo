@@ -1,12 +1,10 @@
-import { Link } from 'react-router-dom'
+import React from 'react'
 
-export default function Login() {
+
+export default function Post(props) {
   return (
     <div >
-      <form >
-        <input >username</input>
-        <input >password</input>
-      </form>
+      {props.posts[0].image}
     </div>
   )
 }
